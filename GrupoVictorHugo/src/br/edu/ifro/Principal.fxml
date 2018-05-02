@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.PrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="336.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.PrincipalController">
     <children>
-        <Button fx:id="button" layoutX="264.0" layoutY="161.0" onAction="#handleButtonAction" text="Sair" />
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <Button fx:id="button1" layoutX="208.0" layoutY="161.0" onAction="#handleButtonAction" text="Salvar" />
+      <JFXTextField fx:id="txtNumero1" layoutX="26.0" layoutY="41.0" prefHeight="25.0" prefWidth="223.0" />
+      <JFXTextField fx:id="txtNumero2" layoutX="26.0" layoutY="116.0" prefHeight="25.0" prefWidth="223.0" />
+      <JFXTextField fx:id="txtResultado" editable="false" layoutX="26.0" layoutY="265.0" prefHeight="25.0" prefWidth="102.0" />
+      <Text layoutX="26.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número 1" />
+      <Text layoutX="26.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número 2" />
+      <Text layoutX="26.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado" />
+      <JFXButton fx:id="btnSoma" layoutX="312.0" layoutY="41.0" text="Soma" />
+      <JFXButton fx:id="btnMultiplicacao" layoutX="292.0" layoutY="184.0" text="Multiplicação" />
+      <JFXButton fx:id="btnSubtracao" layoutX="294.0" layoutY="113.0" prefHeight="25.0" prefWidth="82.0" text="Subtração" />
+      <JFXButton fx:id="btnDivisao" layoutX="308.0" layoutY="265.0" text="Divisão" />
     </children>
 </AnchorPane>
