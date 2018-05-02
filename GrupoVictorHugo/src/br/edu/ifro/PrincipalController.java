@@ -27,7 +27,36 @@ public class PrincipalController implements Initializable {
     
     @FXML
     private void Soma(ActionEvent event) {
+       Double  num1 = Double.parseDouble(txtNumero1.getText());
+       Double  num2 = Double.parseDouble(txtNumero2.getText());
+       Double  resultado = num1 + num2;
        
+       txtResultado.setText(resultado.toString());
+    }
+    
+    @FXML
+    private void Subtracao(ActionEvent event) {
+       Double  num1 = Double.parseDouble(txtNumero1.getText());
+       Double  num2 = Double.parseDouble(txtNumero2.getText());
+       Double  resultado = num1 - num2;
+       
+       txtResultado.setText(resultado.toString());
+    }
+    @FXML
+    private void Multiplicacao(ActionEvent event) {
+       Double  num1 = Double.parseDouble(txtNumero1.getText());
+       Double  num2 = Double.parseDouble(txtNumero2.getText());
+       Double  resultado = num1 * num2;
+       
+       txtResultado.setText(resultado.toString());
+    }
+    @FXML
+    private void Divisao(ActionEvent event) {
+       Double  num1 = Double.parseDouble(txtNumero1.getText());
+       Double  num2 = Double.parseDouble(txtNumero2.getText());
+       Double  resultado = num1 / num2;
+       
+       txtResultado.setText(resultado.toString());
     }
     
     @Override
