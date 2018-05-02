@@ -11,15 +11,16 @@
 <AnchorPane id="AnchorPane" prefHeight="336.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.PrincipalController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <Text layoutX="26.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número 1" />
-      <Text layoutX="26.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número 2" />
-      <Text layoutX="26.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado" />
-      <TextField fx:id="txtNumero1" layoutX="26.0" layoutY="50.0" prefHeight="31.0" prefWidth="200.0" />
-      <TextField fx:id="txtNumero2" layoutX="26.0" layoutY="129.0" prefHeight="31.0" prefWidth="200.0" />
-      <TextField fx:id="txtResultado" layoutX="26.0" layoutY="273.0" prefHeight="31.0" prefWidth="200.0" />
-      <Button fx:id="btnSoma" layoutX="310.0" layoutY="50.0" mnemonicParsing="false" onAction="#Soma" prefHeight="31.0" prefWidth="93.0" text="Soma" />
-      <Button fx:id="btnSoma1" layoutX="310.0" layoutY="129.0" mnemonicParsing="false" onAction="#Subtracao" prefHeight="31.0" prefWidth="93.0" text="Subtracao" />
-      <Button fx:id="btnSoma11" layoutX="310.0" layoutY="195.0" mnemonicParsing="false" onAction="#Multiplicacao" prefHeight="31.0" prefWidth="93.0" text="Multiplicacao" />
-      <Button fx:id="btnSoma12" layoutX="310.0" layoutY="273.0" mnemonicParsing="false" onAction="#Divisao" prefHeight="31.0" prefWidth="93.0" text="Divisao" />
+      <Button fx:id="btnSoma" layoutX="329.0" layoutY="291.0" mnemonicParsing="false" onAction="#Soma" prefHeight="31.0" prefWidth="93.0" text="Soma" />
+      <MenuBar prefHeight="25.0" prefWidth="436.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastro">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#AbrirCadastroAluno" text="Alunos" />
+                  <MenuItem mnemonicParsing="false" onAction="#FecharProjeto" text="Fechar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>
