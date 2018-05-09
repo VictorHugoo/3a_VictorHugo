@@ -23,48 +23,14 @@ import javafx.stage.Stage;
  * @author 03194090232
  */
 public class PrincipalController implements Initializable {
-
-    private TextField txtNumero1;
     
     @FXML
-    private TextField txtNumero2, txtResultado;
-    Button btnSoma;
+    Button btnSair;
     
-    @FXML Button btnSubtracao, btnMultiplicacao, btnDivisao;
     @FXML
     private Label label;
     
     
-    @FXML
-    private void Soma(ActionEvent event) {
-       Double  num1 = Double.parseDouble(txtNumero1.getText());
-       Double  num2 = Double.parseDouble(txtNumero2.getText());
-       Double  resultado = num1 + num2;
-       
-       txtResultado.setText(resultado.toString());
-    }
-    
-    private void Subtracao(ActionEvent event) {
-       Double  num1 = Double.parseDouble(txtNumero1.getText());
-       Double  num2 = Double.parseDouble(txtNumero2.getText());
-       Double  resultado = num1 - num2;
-       
-       txtResultado.setText(resultado.toString());
-    }
-    private void Multiplicacao(ActionEvent event) {
-       Double  num1 = Double.parseDouble(txtNumero1.getText());
-       Double  num2 = Double.parseDouble(txtNumero2.getText());
-       Double  resultado = num1 * num2;
-       
-       txtResultado.setText(resultado.toString());
-    }
-    private void Divisao(ActionEvent event) {
-       Double  num1 = Double.parseDouble(txtNumero1.getText());
-       Double  num2 = Double.parseDouble(txtNumero2.getText());
-       Double  resultado = num1 / num2;
-       
-       txtResultado.setText(resultado.toString());
-    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -88,6 +54,10 @@ public class PrincipalController implements Initializable {
 
     @FXML
     private void FecharProjeto(ActionEvent event) {
+    }
+
+    @FXML
+    private void Soma(ActionEvent event) {
     }
     
 }
